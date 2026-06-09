@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I Djalan 在路上文化路線平台原型</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="route-app">
+      <section class="hero">
+        <div>
+          <p>U-start 原漾 113 / I Djalan 在路上</p>
+          <h1>把部落故事、路線與體驗預約，整理成可被看見的文化旅行平台。</h1>
+        </div>
+        <div class="impact">
+          <span>地方收益草估</span>
+          <strong id="revenue">NT$0</strong>
+        </div>
+      </section>
+
+      <section class="filters">
+        <input id="search" type="search" placeholder="搜尋路線、主理人、文化主題">
+        <select id="regionFilter">
+          <option value="all">全部地區</option>
+          <option value="east">東部</option>
+          <option value="south">南部</option>
+          <option value="mountain">山線</option>
+        </select>
+        <select id="typeFilter">
+          <option value="all">全部體驗</option>
+          <option value="walk">走讀</option>
+          <option value="craft">工藝</option>
+          <option value="food">食農</option>
+        </select>
+      </section>
+
+      <section class="layout">
+        <div class="panel map-panel">
+          <div class="panel-head">
+            <div>
+              <p>Story routes</p>
+              <h2>文化路線</h2>
+            </div>
+            <span id="routeCount">0 條</span>
+          </div>
+          <div id="routeList" class="route-list"></div>
+        </div>
+
+        <aside class="side">
+          <section class="panel booking">
+            <div class="panel-head">
+              <div>
+                <p>Booking</p>
+                <h2>預約草稿</h2>
+              </div>
+            </div>
+            <div id="bookingList" class="empty">尚未選擇路線。</div>
+            <button id="confirm" type="button">建立預約草稿</button>
+          </section>
+
+          <section class="panel guide">
+            <div class="panel-head">
+              <div>
+                <p>Host desk</p>
+                <h2>主理人工作台</h2>
+              </div>
+            </div>
+            <form id="hostForm">
+              <label>
+                新路線名稱
+                <input name="title" required placeholder="例：海岸採集走讀">
+              </label>
+              <label>
+                文化主題
+                <select name="type">
+                  <option value="walk">走讀</option>
+                  <option value="craft">工藝</option>
+                  <option value="food">食農</option>
+                </select>
+              </label>
+              <label>
+                每人價格
+                <input name="price" type="number" min="300" value="980" required>
+              </label>
+              <button type="submit">新增路線</button>
+            </form>
+          </section>
+
+          <section class="panel source">
+            <span>比賽來源</span>
+            <strong>U-start 原漾計畫 / 113 年度第二階段績優團隊</strong>
+            <p>作品：I Djalan 在路上。學校：中國文化大學。公司：在路上無限文化有限公司。</p>
+            <a href="https://ustart.yda.gov.tw/p/405-1000-2079,c147.php?Lang=zh-tw" target="_blank" rel="noreferrer">官方得獎名單</a>
+          </section>
+        </aside>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
