@@ -1,5 +1,21 @@
 # I Djalan 在路上文化路線平台原型
 
+## 快速看懂
+
+![startup-idjalan-cultural-routes 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-idjalan-cultural-routes/
+- 這個原型在做什麼：把 I Djalan 在路上做成文化路線與體驗預約平台。
+- 特色定位：特色是把原民/地方文化旅程轉成路線節點、故事內容與預約管理。
+- 操作流程：探索文化路線與體驗場域 → 查看故事節點、導覽內容與可預約時段 → 建立行程並追蹤參與者回饋
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-idjalan-cultural-routes 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 ## 比賽來源
 
 - 競賽：U-start 原漾計畫
